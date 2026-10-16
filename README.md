@@ -143,6 +143,9 @@ adb shell "am broadcast -n com.leadzam.clicktocall/.DebugSimulateReceiver \
 - The ack is a plain background-thread HTTP call inside the FCM service; production should use WorkManager for retries.
 - Lead data is mocked in `backend/public/app.js`.
 
+## Screen Recording Demo
+https://drive.google.com/file/d/15DJKg3UbNOmlu6vmsTPQX3sx46J0uy0q/view?usp=sharing
+
 ## Production notes
 
 **Multiple devices:** key devices by user (`userId → [deviceId, token, name, lastSeen]`), let the CRM pick the target device (or "last active"), send to one token per request, prune tokens that return `UNREGISTERED`.
