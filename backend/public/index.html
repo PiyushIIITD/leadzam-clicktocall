@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LeadZam – Click to Call demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>LeadZam <span>CRM</span></h1>
+    <div id="device" class="device" role="status" aria-live="polite">Checking device…</div>
+  </header>
+
+  <main>
+    <section aria-labelledby="leads-h">
+      <h2 id="leads-h">Leads</h2>
+      <ul id="leads" class="leads"></ul>
+    </section>
+
+    <section aria-labelledby="hist-h">
+      <h2 id="hist-h">Call requests</h2>
+      <p class="hint">
+        “Request sent” only means Firebase accepted the message. “Received by phone” appears
+        once the Android app acknowledges it.
+      </p>
+      <ul id="history" class="history"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

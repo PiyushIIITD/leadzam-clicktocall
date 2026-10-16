@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- DEBUG ONLY: lets `adb shell am broadcast` simulate an FCM dial request
+             through the same handler the real service uses. Not in release builds. -->
+        <receiver
+            android:name="com.leadzam.clicktocall.DebugSimulateReceiver"
+            android:exported="true" />
+    </application>
+</manifest>

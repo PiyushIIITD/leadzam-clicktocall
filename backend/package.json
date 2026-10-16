@@ -1,0 +1,19 @@
+{
+  "name": "leadzam-click-to-call-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Small backend + CRM dashboard that forwards Click-to-Call requests to an Android device via FCM",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^12.7.0"
+  }
+}
